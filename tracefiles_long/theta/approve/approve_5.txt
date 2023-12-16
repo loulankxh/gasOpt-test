@@ -1,0 +1,3 @@
+approve,constructor,,214,3,,false
+approve,mint,instance,accounts[0] 365,3,,false
+approve,approve,instance,accounts[2] 4,0,,true

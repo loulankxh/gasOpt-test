@@ -1,0 +1,4 @@
+transferFrom,constructor,,,8,,false
+transferFrom,mint,instance,8 accounts[0],8,,false
+transferFrom,setApprovalForAll,instance,accounts[8] 1,,,false
+transferFrom,transferFrom,instance,accounts[0] accounts[1] 8,8,,true

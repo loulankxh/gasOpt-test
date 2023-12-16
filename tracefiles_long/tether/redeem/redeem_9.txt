@@ -1,0 +1,4 @@
+redeem,constructor,,232,7,,false
+redeem,issue,instance,accounts[9] 44,7,,false
+redeem,redeem,instance,accounts[9] 10,7,,false
+redeem,redeem,instance,accounts[9] 21,7,,true
