@@ -1,0 +1,4 @@
+burn,constructor,,331,,,false
+burn,transfer,instance,accounts[7] 178,,,false
+burn,burn,instance,11,7,,false
+burn,burn,instance,43,7,,true
