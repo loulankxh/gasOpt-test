@@ -87,20 +87,20 @@ for folder in "$noOptimization"/*; do
 	fi
 done
 
-reference="./contracts/reference"
+# reference="./contracts/reference"
 
-for folder in "$reference"/*; do
-	if [ -d "$folder" ]; then
-		foldername=$(basename "$folder")
-		echo "$foldername"
+# for folder in "$reference"/*; do
+# 	if [ -d "$folder" ]; then
+# 		foldername=$(basename "$folder")
+# 		echo "$foldername"
 
-		for file in "$folder"/*.sol; do
-			if [ -f "$file" ]; then
-				filename=$(basename -- "$file")
-				echo "Compiling $filename in $foldername..."
-				truffle compile "$file"
-				truffle test ./test_longTrace/${foldername}_test_gas.js --compile-none
-			fi
-		done
-	fi
-done
+# 		for file in "$folder"/*.sol; do
+# 			if [ -f "$file" ]; then
+# 				filename=$(basename -- "$file")
+# 				echo "Compiling $filename in $foldername..."
+# 				truffle compile "$file"
+# 				truffle test ./test_longTrace/${foldername}_test_gas.js --compile-none
+# 			fi
+# 		done
+# 	fi
+# done
