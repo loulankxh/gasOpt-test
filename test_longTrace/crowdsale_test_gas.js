@@ -71,10 +71,13 @@ helper.range(transactionCounts).forEach(l => {
       let owner = helper.random(0, deployAccountCount);
       let duration = helper.random(31, durationUpperBound+1);
       let text = `close,constructor,,${initialAmount} accounts[${beneficiary}],${owner},,false\nclose,increase,time,time.duration.days[${duration}],,,false\nclose,close,instance,,${owner},,false\nclose,close,instance,,${owner},,true\n`;
-      fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
-        if (err) throw err;
-        console.log('File is created successfully.');
-      });
+      if(!fs.existsSync(path.join(transactionFolderPath, fileName))) {
+        console.log('generating new tracefiles ...');
+        fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
+          if (err) throw err;
+          console.log('File is created successfully.');
+        });
+      }
     }) 
   }    
 
@@ -90,10 +93,13 @@ helper.range(transactionCounts).forEach(l => {
       let investAmount_1 = helper.random(investAmountLowerBound, investAmountUpperBound+1);
       let investAmount_2 = investAmount_1 + helper.random(0, investAmountUpperBound+1);
       let text = `invest,constructor,,${initialAmount} accounts[${beneficiary}],${owner},,false\ninvest,invest,instance,,${investAccountIndex},web3.utils.toWei(${investAmount_1} ether),true\n`;
-      fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
-        if (err) throw err;
-        console.log('File is created successfully.');
-      });
+      if(!fs.existsSync(path.join(transactionFolderPath, fileName))) {
+        console.log('generating new tracefiles ...');
+        fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
+          if (err) throw err;
+          console.log('File is created successfully.');
+        });
+      }
     }) 
   }  
 
@@ -107,10 +113,13 @@ helper.range(transactionCounts).forEach(l => {
       let investAccountIndex = helper.random(0, deployAccountCount);
       let investAmount = helper.random(1, initialAmount);
       let text = `refund,constructor,,${initialAmount} accounts[${beneficiary}],${owner},,false\nrefund,invest,instance,,${investAccountIndex},web3.utils.toWei(${investAmount} ether),false\nrefund,close,instance,,${owner},,false\nrefund,refund,instance,,${investAccountIndex},,false\nrefund,refund,instance,,${investAccountIndex},,true\n`;
-      fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
-        if (err) throw err;
-        console.log('File is created successfully.');
-      });
+      if(!fs.existsSync(path.join(transactionFolderPath, fileName))) {
+        console.log('generating new tracefiles ...');
+        fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
+          if (err) throw err;
+          console.log('File is created successfully.');
+        });
+      }
     }) 
   }  
 
@@ -124,10 +133,13 @@ helper.range(transactionCounts).forEach(l => {
       let investAccountIndex = helper.random(0, deployAccountCount);
       let investAmount = helper.random(investAmountLowerBound, investAmountUpperBound+1);
       let text = `withdraw,constructor,,${initialAmount} accounts[${beneficiary}],${owner},,false\nwithdraw,invest,instance,,${investAccountIndex},web3.utils.toWei(${investAmount} ether),false\nwithdraw,withdraw,instance,,${beneficiary},,false\nwithdraw,withdraw,instance,,${beneficiary},,true\n`;
-      fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
-        if (err) throw err;
-        console.log('File is created successfully.');
-      });
+      if(!fs.existsSync(path.join(transactionFolderPath, fileName))) {
+        console.log('generating new tracefiles ...');
+        fs.writeFileSync(path.join(transactionFolderPath, fileName), text, function (err) {
+          if (err) throw err;
+          console.log('File is created successfully.');
+        });
+      }
     }) 
   }  
 

@@ -1,3 +1,3 @@
-endAuction,constructor,,accounts[1] 85,,,false
-endAuction,increase,time,time.duration.seconds[86],,,false
+endAuction,constructor,,accounts[1] 34,,,false
+endAuction,increase,time,time.duration.seconds[35],,,false
 endAuction,endAuction,instance,,,,true

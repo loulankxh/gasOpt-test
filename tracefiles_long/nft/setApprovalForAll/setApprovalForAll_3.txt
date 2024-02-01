@@ -1,4 +1,4 @@
-setApprovalForAll,constructor,,,4,,false
-setApprovalForAll,mint,instance,4 accounts[9],4,,false
-setApprovalForAll,setApprovalForAll,instance,accounts[5] 0,,,false
-setApprovalForAll,setApprovalForAll,instance,accounts[5] 1,,,true
+setApprovalForAll,constructor,,,6,,false
+setApprovalForAll,mint,instance,4 accounts[1],6,,false
+setApprovalForAll,setApprovalForAll,instance,accounts[2] 0,,,false
+setApprovalForAll,setApprovalForAll,instance,accounts[2] 1,,,true

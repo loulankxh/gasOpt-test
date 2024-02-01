@@ -1,3 +1,3 @@
 mint,constructor,,,4,,false
-mint,mint,instance,8 accounts[5],4,,false
-mint,mint,instance,9 accounts[5],4,,true
+mint,mint,instance,8 accounts[7],4,,false
+mint,mint,instance,9 accounts[7],4,,true

@@ -1,0 +1,3 @@
+transfer,constructor,,1 2 18 365 accounts[2] accounts[6],0,,false
+transfer,transfer,instance,accounts[1] 149,6,,false
+transfer,transfer,instance,accounts[1] 58,6,,true

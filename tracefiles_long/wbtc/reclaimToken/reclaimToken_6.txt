@@ -1,0 +1,6 @@
+reclaimToken,constructor,,,3,,false
+reclaimToken,mint,instance,accounts[4] 983,3,,false
+reclaimToken,transfer,instance,accounts[1] 151,4,,false
+reclaimToken,reclaimToken,instance,,3,,false
+reclaimToken,transfer,instance,accounts[1] 137,4,,false
+reclaimToken,reclaimToken,instance,,3,,true

@@ -1,9 +1,5 @@
 contract Wallet {
-  struct AllBurnTuple {
-    int n;
-    bool _valid;
-  }
-  struct AllMintTuple {
+  struct TotalSupplyTuple {
     int n;
     bool _valid;
   }
@@ -19,14 +15,11 @@ contract Wallet {
     address p;
     bool _valid;
   }
-  AllBurnTuple allBurn;
-  AllMintTuple allMint;
-  mapping(address=>TotalOutTuple) totalOut;
   mapping(address=>TotalInTuple) totalIn;
+  TotalSupplyTuple totalSupply;
+  mapping(address=>TotalOutTuple) totalOut;
   OwnerTuple owner;
   event Transfer(address from,address to,int amount);
-  event Mint(address p,int amount);
-  event Burn(address p,int amount);
   constructor() public {
     updateOwnerOnInsertConstructor_r2();
   }
@@ -40,15 +33,15 @@ contract Wallet {
       int n = balanceOf(p);
       return n;
   }
-  function getTotalSupply() public view  returns (int) {
-      int n = totalSupply();
-      return n;
-  }
   function mint(address p,int amount) public    {
       bool r9 = updateMintOnInsertRecv_mint_r9(p,amount);
       if(r9==false) {
         revert("Rule condition failed");
       }
+  }
+  function getTotalSupply() public view  returns (int) {
+      int n = totalSupply.n;
+      return n;
   }
   function burn(address p,int amount) public    {
       bool r3 = updateBurnOnInsertRecv_burn_r3(p,amount);
@@ -56,19 +49,44 @@ contract Wallet {
         revert("Rule condition failed");
       }
   }
+  function updateAllBurnOnInsertBurn_r7(int n) private    {
+      int delta0 = int(n);
+      updateTotalSupplyOnIncrementAllBurn_r8(delta0);
+  }
+  function updateBalanceOfOnIncrementTotalOut_r1(address p,int o) private    {
+      // Empty()
+  }
   function updateTotalInOnInsertTransfer_r6(address p,int n) private    {
+      int delta0 = int(n);
+      updateBalanceOfOnIncrementTotalIn_r1(p,delta0);
       totalIn[p].n += n;
   }
+  function updateBalanceOfOnIncrementTotalIn_r1(address p,int i) private    {
+      // Empty()
+  }
   function updateTotalOutOnInsertTransfer_r4(address p,int n) private    {
+      int delta0 = int(n);
+      updateBalanceOfOnIncrementTotalOut_r1(p,delta0);
       totalOut[p].n += n;
   }
-  function updateMintOnInsertRecv_mint_r9(address p,int n) private   returns (bool) {
+  function updateOwnerOnInsertConstructor_r2() private    {
+      address s = msg.sender;
+      owner = OwnerTuple(s,true);
+  }
+  function updateintByint(int x,int delta) private   returns (int) {
+      int newValue = x+delta;
+      return newValue;
+  }
+  function updateTotalSupplyOnIncrementAllMint_r8(int m) private    {
+      totalSupply.n += m;
+  }
+  function updateBurnOnInsertRecv_burn_r3(address p,int n) private   returns (bool) {
       address s = owner.p;
       if(s==msg.sender) {
-        if(n>0 && p!=address(0)) {
-          updateTransferOnInsertMint_r10(p,n);
-          updateAllMintOnInsertMint_r0(n);
-          emit Mint(p,n);
+        int m = balanceOf(p);
+        if(p!=address(0) && n<=m) {
+          updateAllBurnOnInsertBurn_r7(n);
+          updateTransferOnInsertBurn_r11(p,n);
           return true;
         }
       }
@@ -79,45 +97,25 @@ contract Wallet {
       updateTotalInOnInsertTransfer_r6(address(0),n);
       emit Transfer(p,address(0),n);
   }
+  function updateTotalSupplyOnIncrementAllBurn_r8(int b) private    {
+      totalSupply.n -= b;
+  }
   function updateuintByint(uint x,int delta) private   returns (uint) {
       int convertedX = int(x);
       int value = convertedX+delta;
       uint convertedValue = uint(value);
       return convertedValue;
   }
-  function updateOwnerOnInsertConstructor_r2() private    {
-      address s = msg.sender;
-      owner = OwnerTuple(s,true);
-  }
-  function updateBurnOnInsertRecv_burn_r3(address p,int n) private   returns (bool) {
+  function updateMintOnInsertRecv_mint_r9(address p,int n) private   returns (bool) {
       address s = owner.p;
       if(s==msg.sender) {
-        int m = balanceOf(p);
-        if(p!=address(0) && n<=m) {
-          updateAllBurnOnInsertBurn_r7(n);
-          updateTransferOnInsertBurn_r11(p,n);
-          emit Burn(p,n);
+        if(n>0 && p!=address(0)) {
+          updateTransferOnInsertMint_r10(p,n);
+          updateAllMintOnInsertMint_r0(n);
           return true;
         }
       }
       return false;
-  }
-  function totalSupply() private view  returns (int) {
-      int b = allBurn.n;
-      int m = allMint.n;
-      int n = m-b;
-      return n;
-  }
-  function updateAllMintOnInsertMint_r0(int n) private    {
-      allMint.n += n;
-  }
-  function updateAllBurnOnInsertBurn_r7(int n) private    {
-      allBurn.n += n;
-  }
-  function updateTransferOnInsertMint_r10(address p,int n) private    {
-      updateTotalOutOnInsertTransfer_r4(address(0),n);
-      updateTotalInOnInsertTransfer_r6(p,n);
-      emit Transfer(address(0),p,n);
   }
   function updateTransferOnInsertRecv_transfer_r12(address s,address r,int n) private   returns (bool) {
       int m = balanceOf(s);
@@ -134,5 +132,14 @@ contract Wallet {
       int o = totalOut[p].n;
       int s = i-o;
       return s;
+  }
+  function updateAllMintOnInsertMint_r0(int n) private    {
+      int delta0 = int(n);
+      updateTotalSupplyOnIncrementAllMint_r8(delta0);
+  }
+  function updateTransferOnInsertMint_r10(address p,int n) private    {
+      updateTotalOutOnInsertTransfer_r4(address(0),n);
+      updateTotalInOnInsertTransfer_r6(p,n);
+      emit Transfer(address(0),p,n);
   }
 }

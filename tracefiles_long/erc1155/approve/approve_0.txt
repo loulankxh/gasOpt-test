@@ -1,0 +1,4 @@
+approve,constructor,,,3,,false
+approve,mint,instance,339 accounts[5] 865,3,,false
+approve,approve,instance,339 accounts[4] 152,4,,false
+approve,approve,instance,339 accounts[4] 519,4,,true

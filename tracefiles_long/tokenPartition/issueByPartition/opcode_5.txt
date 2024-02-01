@@ -1,0 +1,273 @@
+------------- opcode for test0 --------------
+
+Gas cost (from result.receipt): 60487
+Gas cost (from opcodes): 38775
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 34200
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 25800
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 1
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 2
+SSTORE 100 slot: 0
+Storage gas cost over Op: 88.2%
+Read gas cost over Op: 21.66%
+Write gas cost over Op: 66.54%
+Read gas cost over write gas cost: 32.56%
+------------- opcode for test1 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test2 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test3 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test4 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test5 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test6 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test7 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test8 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+------------- opcode for test9 --------------
+
+Gas cost (from result.receipt): 77587
+Gas cost (from opcodes): 55875
+Gas cost (memory read operations): 6
+Gas cost (memory write operations): 57
+Gas cost (memory_others operations): 1518
+Gas cost (storage operations): 51300
+Gas cost (computation operations): 2994
+
+Transaction storage overhead (read): 4 slot(s)
+Read Gas Cost: 8400
+Transaction storage overhead (write): 3 slot(s)
+Write Gas Cost: 42900
+SLOAD 2100 slot: 4
+SLOAD 100 slot: 0
+SSTORE 22100 slot: 0
+SSTORE 20000 slot: 2
+SSTORE 5000 slot: 0
+SSTORE 2900 slot: 1
+SSTORE 100 slot: 0
+Storage gas cost over Op: 91.81%
+Read gas cost over Op: 15.03%
+Write gas cost over Op: 76.78%
+Read gas cost over write gas cost: 19.58%
+summary:
+gas: 75877
+gas_op: 54165
+gas_memory_read: 6
+gas_memory_write: 57
+gas_memory_other: 1518
+gas_storage: 49590
+gas_computation: 2994
+storage_overhead_read_slot: 4
+storage_overhead_write_slot: 3
+storage_read_cost: 8400
+storage_write_cost: 41190
+sload_2100_slot: 4
+sload_100_slot: 0
+sstore_22100_slot: 0
+sstore_20000_slot: 1.9
+sstore_5000_slot: 0
+sstore_2900_slot: 1.1
+sstore_100_slot: 0
+storage_over_op: 91.45%
+read_over_op: 15.69%
+write_over_op: 75.76%
+read_over_write: 20.88%

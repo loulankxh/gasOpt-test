@@ -1,3 +1,3 @@
-withdrawEther,constructor,,44,1,,false
-withdrawEther,withdrawEther,instance,4,1,web3.utils.toWei(4 ether),false
-withdrawEther,withdrawEther,instance,4,1,web3.utils.toWei(4 ether),true
+withdrawEther,constructor,,144,8,,false
+withdrawEther,withdrawEther,instance,3,8,web3.utils.toWei(3 ether),false
+withdrawEther,withdrawEther,instance,6,8,web3.utils.toWei(6 ether),true

@@ -1,0 +1,3 @@
+burn,constructor,,1 2 18 574 accounts[9] accounts[3],0,,false
+burn,burn,instance,220,3,,false
+burn,burn,instance,245,3,,true

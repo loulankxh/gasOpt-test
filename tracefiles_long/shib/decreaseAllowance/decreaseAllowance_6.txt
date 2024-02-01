@@ -1,0 +1,4 @@
+decreaseAllowance,constructor,,1 2 18 32 accounts[3] accounts[7],,,false
+decreaseAllowance,approve,instance,accounts[2] 5,7,,false
+decreaseAllowance,decreaseAllowance,instance,accounts[2] 2,7,,false
+decreaseAllowance,decreaseAllowance,instance,accounts[2] 2,7,,true

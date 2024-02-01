@@ -1,0 +1,4 @@
+transferOwnership,constructor,,,4,,false
+transferOwnership,transferOwnership,instance,accounts[0],4,,false
+transferOwnership,claimOwnership,instance,,0,,false
+transferOwnership,transferOwnership,instance,accounts[3],0,,true

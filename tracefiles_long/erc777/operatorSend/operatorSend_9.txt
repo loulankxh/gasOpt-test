@@ -1,0 +1,4 @@
+operatorSend,constructor,,1 2,,,false
+operatorSend,mint,instance,528 5495328715374220,5,,false
+operatorSend,authorizeOperator,instance,accounts[4],5,,false
+operatorSend,operatorSend,instance,accounts[5] accounts[4] 223 5495328715374220 871774798602631,4,,true

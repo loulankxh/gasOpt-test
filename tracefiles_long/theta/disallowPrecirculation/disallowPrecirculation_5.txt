@@ -1,5 +1,5 @@
-allowPrecirculation,constructor,,500,9,,false
-allowPrecirculation,allowPrecirculation,instance,accounts[3],9,,false
-disallowPrecirculation,disallowPrecirculation,instance,accounts[3],9,,false
-allowPrecirculation,allowPrecirculation,instance,accounts[1],9,,false
-disallowPrecirculation,disallowPrecirculation,instance,accounts[1],9,,true
+allowPrecirculation,constructor,,333,7,,false
+allowPrecirculation,allowPrecirculation,instance,accounts[4],7,,false
+disallowPrecirculation,disallowPrecirculation,instance,accounts[4],7,,false
+allowPrecirculation,allowPrecirculation,instance,accounts[9],7,,false
+disallowPrecirculation,disallowPrecirculation,instance,accounts[9],7,,true

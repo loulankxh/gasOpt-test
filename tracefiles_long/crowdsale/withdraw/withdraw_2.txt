@@ -1,0 +1,4 @@
+withdraw,constructor,,873 accounts[2],0,,false
+withdraw,invest,instance,,6,web3.utils.toWei(96 ether),false
+withdraw,withdraw,instance,,2,,false
+withdraw,withdraw,instance,,2,,true

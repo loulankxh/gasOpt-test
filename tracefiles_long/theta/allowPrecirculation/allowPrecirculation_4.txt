@@ -1,3 +1,3 @@
-allowPrecirculation,constructor,,388,3,,false
-allowPrecirculation,allowPrecirculation,instance,accounts[0],3,,false
-allowPrecirculation,allowPrecirculation,instance,accounts[8],3,,true
+allowPrecirculation,constructor,,415,2,,false
+allowPrecirculation,allowPrecirculation,instance,accounts[2],2,,false
+allowPrecirculation,allowPrecirculation,instance,accounts[3],2,,true

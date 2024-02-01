@@ -1,0 +1,5 @@
+refund,constructor,,880 accounts[2],4,,false
+refund,invest,instance,,9,web3.utils.toWei(354 ether),false
+refund,close,instance,,4,,false
+refund,refund,instance,,9,,false
+refund,refund,instance,,9,,true

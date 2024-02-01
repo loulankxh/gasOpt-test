@@ -1,0 +1,7 @@
+destroyBlackFunds,constructor,,556,9,,false
+destroyBlackFunds,transfer,instance,accounts[1] 80,9,,false
+destroyBlackFunds,addBlackList,instance,accounts[1],9,,false
+destroyBlackFunds,destroyBlackFunds,instance,accounts[1],9,,false
+destroyBlackFunds,transfer,instance,accounts[2] 7,9,,false
+destroyBlackFunds,addBlackList,instance,accounts[2],9,,false
+destroyBlackFunds,destroyBlackFunds,instance,accounts[2],9,,true

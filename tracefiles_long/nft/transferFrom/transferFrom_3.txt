@@ -1,4 +1,4 @@
-transferFrom,constructor,,,9,,false
-transferFrom,mint,instance,4 accounts[1],9,,false
-transferFrom,setApprovalForAll,instance,accounts[6] 1,,,false
-transferFrom,transferFrom,instance,accounts[1] accounts[5] 4,6,,true
+transferFrom,constructor,,,2,,false
+transferFrom,mint,instance,4 accounts[9],2,,false
+transferFrom,setApprovalForAll,instance,accounts[7] 1,,,false
+transferFrom,transferFrom,instance,accounts[9] accounts[2] 4,7,,true

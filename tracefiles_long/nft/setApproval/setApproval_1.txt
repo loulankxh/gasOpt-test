@@ -1,4 +1,4 @@
-setApproval,constructor,,,5,,false
-setApproval,mint,instance,2 accounts[1],5,,false
-setApproval,setApproval,instance,2 accounts[0] 1,1,,false
-setApproval,setApproval,instance,2 accounts[0] 0,1,,true
+setApproval,constructor,,,2,,false
+setApproval,mint,instance,2 accounts[6],2,,false
+setApproval,setApproval,instance,2 accounts[0] 1,6,,false
+setApproval,setApproval,instance,2 accounts[0] 0,6,,true

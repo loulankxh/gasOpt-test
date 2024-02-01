@@ -1,0 +1,5 @@
+pause,constructor,,,0,,false
+pause,mint,instance,accounts[7] 541,0,,false
+pause,pause,instance,,0,,false
+pause,unpause,instance,,0,,false
+pause,pause,instance,,0,,true

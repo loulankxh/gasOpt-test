@@ -1,4 +1,4 @@
-redeem,constructor,,363,2,,false
-redeem,issue,instance,accounts[8] 190,2,,false
-redeem,redeem,instance,accounts[8] 36,2,,false
-redeem,redeem,instance,accounts[8] 58,2,,true
+redeem,constructor,,584,0,,false
+redeem,issue,instance,570,0,,false
+redeem,redeem,instance,43,0,,false
+redeem,redeem,instance,123,0,,true
